@@ -374,11 +374,11 @@ export default function Home() {
                     Open Source
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="https://opencanvas.pro" target="_blank" rel="noopener noreferrer">
                     OpenCanvas Pro
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 
