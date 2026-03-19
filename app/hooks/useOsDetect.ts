@@ -4,8 +4,16 @@ import { useSyncExternalStore } from "react";
 
 export type OsPlatform = "mac" | "windows" | "linux" | "unknown";
 
+function isMobile(): boolean {
+  if (typeof navigator === "undefined") return false;
+  const ua = navigator.userAgent.toLowerCase();
+  return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini|mobile|tablet/.test(ua);
+}
+
 function detectOs(): OsPlatform {
   if (typeof navigator === "undefined") return "unknown";
+  // Mobile devices should not get a desktop-specific label
+  if (isMobile()) return "unknown";
   const ua = navigator.userAgent.toLowerCase();
   const platform =
     (navigator as { userAgentData?: { platform?: string } }).userAgentData
@@ -38,5 +46,5 @@ export const OS_LABELS: Record<OsPlatform, string> = {
   mac: "Download for Mac",
   windows: "Download for Windows",
   linux: "Download for Linux",
-  unknown: "Download",
+  unknown: "Download Desktop App",
 };
