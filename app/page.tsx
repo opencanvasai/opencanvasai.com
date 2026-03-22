@@ -60,7 +60,7 @@ const nodes = [
 ];
 
 const socials: { icon: ReactNode; name: string; handle: string; desc: string; url: string }[] = [
-  { icon: <XIcon size={22} />, name: "Twitter / X", handle: "@opencanvasai", desc: "Follow for updates", url: "https://x.com/opencanvasai" },
+  { icon: <XIcon size={22} />, name: "Twitter / X", handle: "@OpenCanvas_AI", desc: "Follow for updates", url: "https://x.com/OpenCanvas_AI" },
   { icon: <YouTubeIcon size={22} />, name: "YouTube", handle: "@OpenCanvasAI", desc: "Watch tutorials", url: "https://youtube.com/@OpenCanvasAI" },
   { icon: <RedditIcon size={22} />, name: "Reddit", handle: "r/OpenCanvasAI", desc: "Join the community", url: "https://reddit.com/r/OpenCanvasAI" },
   { icon: <LinkedInIcon size={22} />, name: "LinkedIn", handle: "OpenCanvas AI", desc: "Professional updates", url: "https://linkedin.com/company/opencanvasai" },
@@ -407,7 +407,7 @@ export default function Home() {
               <h4>Connect</h4>
               <ul>
                 <li>
-                  <a href="https://x.com/opencanvasai" target="_blank" rel="noopener noreferrer">
+                  <a href="https://x.com/OpenCanvas_AI" target="_blank" rel="noopener noreferrer">
                     Twitter / X
                   </a>
                 </li>
@@ -446,7 +446,7 @@ export default function Home() {
           </div>
 
           <div className="footer-socials">
-            <a href="https://x.com/opencanvasai" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><XIcon size={16} /></a>
+            <a href="https://x.com/OpenCanvas_AI" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><XIcon size={16} /></a>
             <a href="https://youtube.com/@OpenCanvasAI" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><YouTubeIcon size={16} /></a>
             <a href="https://reddit.com/r/OpenCanvasAI" target="_blank" rel="noopener noreferrer" aria-label="Reddit"><RedditIcon size={16} /></a>
             <a href="https://linkedin.com/company/opencanvasai" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><LinkedInIcon size={16} /></a>

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "OpenCanvas AI — The Visual AI Workflow Builder",
     description:
       "Open-source node-based AI editor. Bring your own API keys. No subscriptions.",
-    creator: "@opencanvasai",
+    creator: "@OpenCanvas_AI",
   },
 };
 
