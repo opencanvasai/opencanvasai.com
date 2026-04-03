@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -53,7 +54,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script
+          src="https://www.askmysite.ai/widget.js"
+          data-tenant-id="cmnjctp6t000104kykejd4x5t"
+        />
+      </body>
     </html>
   );
 }
