@@ -58,7 +58,7 @@ export default function RootLayout({
         {children}
         <Script
           src="https://www.askmysite.ai/widget.js"
-          data-tenant-id="cmnjctp6t000104kykejd4x5t"
+          data-tenant-id="agt_e1ceb2278f1b4171acd07a401630ba35"
         />
       </body>
     </html>
